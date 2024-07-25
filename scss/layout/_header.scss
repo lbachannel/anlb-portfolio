@@ -1,0 +1,19 @@
+.header {
+    margin-bottom: 240px;
+
+    &-wrap {
+        padding: 20px;
+        border-radius: 12px;
+    }
+
+    &-left {
+        flex: 0 0 auto;
+    }
+
+    &-right {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}
+
