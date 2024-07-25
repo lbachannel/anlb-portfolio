@@ -8,6 +8,11 @@
     -webkit-tap-highlight-color: transparent; /* remove tap highlight on mobile */
 }
 
+:root {
+    --gradient-to: #eb4853;
+    --gradient-from: #d91b6e;
+}
+
 html {
     font-size: 62.5%;
 }
