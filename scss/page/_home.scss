@@ -1,0 +1,24 @@
+body {
+    background-image: url("../../assets/img/background/page-bg-1.jpg");
+    background-color: rgb(255, 255, 255);
+    background-position: 50%;
+    background-size: cover;
+}
+
+.page-wrap {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    background-position: 50%;
+    background-size: cover;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-top: 240px;
+    padding-bottom: 120px;
+    height: 703.2px;
+}
+
+.page-wrap.home {
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
