@@ -1251,7 +1251,7 @@ body {
   padding: 20px;
   border-radius: 12px;
 }
-.header-left {
+.header-logo {
   flex: 0 0 auto;
 }
 .header-right {
@@ -1260,9 +1260,11 @@ body {
   justify-content: flex-end;
 }
 
-.logo-text {
+.logo__text {
+  padding-left: 10px;
   font-size: 4.3rem;
   font-weight: 700;
+  font-family: "Marck Script", sans-serif;
   color: transparent;
   background-clip: text;
   background-image: linear-gradient(180deg, var(--gradient-to), var(--gradient-from));
