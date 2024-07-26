@@ -1,7 +1,11 @@
-.logo-text {
-    font-size: 4.3rem;
-    font-weight: 700;
-    color: transparent;
-    background-clip: text;
-    background-image: linear-gradient(180deg, var(--gradient-to), var(--gradient-from));
+.logo {
+    &__text {
+        padding-left: 10px;
+        font-size: 4.3rem;
+        font-weight: 700;
+        font-family: 'Marck Script', sans-serif;
+        color: transparent;
+        background-clip: text;
+        background-image: linear-gradient(180deg, var(--gradient-to), var(--gradient-from));
+    }
 }
