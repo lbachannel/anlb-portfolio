@@ -71,18 +71,19 @@ body {
         @include abstracts.screen(xl) {
             width: 200px;
             height: 200px;
+            margin: -135px auto 21px;
         }
 
         @include abstracts.screen(lg) {
             width: 280px;
             height: 280px;
-            margin: -220px auto 21px;
+            margin: -180px auto 21px;
         }
 
         @include abstracts.screen(md) {
             width: 260px;
             height: 260px;
-            margin: -210px auto 21px;
+            margin: -165px auto 21px;
         }
 
         &-icon {
