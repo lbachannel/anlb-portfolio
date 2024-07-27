@@ -323,10 +323,26 @@ body {
 
     &-wrap {
         padding: 60px 60px 0 60px;
+
+        @include abstracts.screen(xxl) {
+            padding: 60px 30px 0 30px;
+        }
+
+        @include abstracts.screen(xl) {
+            padding: 60px 20px 0 20px;
+        }
     }
 
     &-wrap + &-wrap {
         padding: 0 60px 0 60px;
+
+        @include abstracts.screen(xxl) {
+            padding: 0 30px 0 30px;
+        }
+
+        @include abstracts.screen(xl) {
+            padding: 0 20px 0 20px;
+        }
     }
 
     &__sub-heading-2 {
@@ -362,17 +378,33 @@ body {
         margin-bottom: 10px;
         font-size: 1.9rem;
         font-weight: 500;
+
+        @include abstracts.screen(xxl) {
+            font-size: 1.7rem;
+        }
+
+        @include abstracts.screen(xl) {
+            font-size: 1.5rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
     }
 
     &__desc {
         margin-bottom: 30px;
-        font-size: 1.6;
+        font-size: 1.6rem;
         line-height: 1.6;
         color: #44566c;
+
+        @include abstracts.screen(xxl) {
+            font-size: 1.5rem;
+        }
 
         &:last-child {
             margin-bottom: 30px;
         }
+
     }
 }
 
@@ -384,6 +416,10 @@ body {
         gap: 20px;
         background: #eef5fa;
         border-radius: 12px;
+        @include abstracts.screen(xxl) {
+            padding: 18px;
+            gap: 15px;
+        }
         &--color {
             background: #fff4f4;
         }
@@ -412,6 +448,18 @@ body {
             &-wrap-learn {
                 filter: brightness(0) saturate(100%) invert(25%) sepia(10%) saturate(6296%) hue-rotate(194deg) brightness(107%) contrast(103%);
             }
+
+            &-wrap-design, &-wrap-security, &-wrap-code, &-wrap-database, &-wrap-integrate, &-wrap-learn {
+                @include abstracts.screen(xxl) {
+                    width: 35px;
+                    height: 35px;
+                }
+
+                @include abstracts.screen(xl) {
+                    width: 25px;
+                    height: 25px;
+                }
+            }
         }
 
         &-right {
@@ -419,6 +467,10 @@ body {
                 font-size: 1.6rem;
                 line-height: 1.6;
                 color: #44566c;
+
+                @include abstracts.screen(xxl) {
+                    font-size: 1.5rem;
+                }
             }
 
             &-desc + &-desc {
@@ -443,6 +495,10 @@ body {
         &-right {
             font-size: 2.6rem;
             font-family: 500;
+            
+            @include abstracts.screen(xxl) {
+                font-size: 2.4rem;
+            }
         }
     }
 
@@ -485,5 +541,9 @@ body {
 
     &__card + &__card {
         margin-top: 30px;
+
+        @include abstracts.screen(xxl) {
+            margin-top: 15px;
+        }
     }
 }
