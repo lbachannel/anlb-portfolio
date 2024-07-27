@@ -7,6 +7,23 @@
     justify-content: center;
 }
 
+// two options to using
+%lineClampNoOption {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+%lineClampHasOptions {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    @supports (-webkit-line-clamp: 1) or
+    (line-clamp: 1) {
+        -webkit-line-clamp: 1
+    }
+}
+
 body {
     background-image: url("../../assets/img/background/page-bg-1.jpg");
     background-color: rgb(255, 255, 255);
@@ -306,10 +323,10 @@ body {
 
     &-wrap {
         padding: 60px 60px 0 60px;
+    }
 
-        &:last-child {
-            padding: 0 60px 0 60px;
-        }
+    &-wrap + &-wrap {
+        padding: 0 60px 0 60px;
     }
 
     &__sub-heading-2 {
@@ -329,6 +346,10 @@ body {
             background: linear-gradient(97deg, #fa5252, #dd2476);;
             border-radius: 5px;
             left: 145px;
+
+        }
+        &--resume:after {
+            left: 180px;
         }
     }
 
@@ -404,5 +425,65 @@ body {
                 margin-top: 10px;
             }
         }
+    }
+}
+
+
+.resume {
+    &__title {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        gap: 10px;
+
+        &-left-icon {
+            filter: brightness(0) saturate(100%) invert(59%) sepia(66%) saturate(1147%) hue-rotate(316deg) brightness(95%) contrast(99%);
+        }
+
+        &-right {
+            font-size: 2.6rem;
+            font-family: 500;
+        }
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: #eef5fa;
+        padding: 20px;
+        border-radius: 12px;
+
+        &--color {
+            background: #fff4f4;
+        }
+
+        &-exp {
+            display: block;
+            font-size: 1.4rem;
+            line-height: 1;
+            margin-bottom: 17px;
+
+            @extend %lineClampNoOption;
+        }
+
+        &-sub-heading {
+            font-size: 1.8rem;
+            line-height: 1.6;
+            color: #0f172a;
+            margin-bottom: 17px;
+            @extend %lineClampHasOptions;
+        }
+
+        &-desc {
+            font-size: 1.6rem;
+            line-height: 1.6;
+            margin-bottom: 0;
+            @extend %lineClampHasOptions;
+        }
+    }
+
+    &__card + &__card {
+        margin-top: 30px;
     }
 }
