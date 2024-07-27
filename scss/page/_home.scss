@@ -73,6 +73,12 @@ body {
             height: 200px;
         }
 
+        @include abstracts.screen(lg) {
+            width: 280px;
+            height: 280px;
+            margin: -220px auto 21px;
+        }
+
         &-icon {
             width: 100%;
             height: 100%;
@@ -235,6 +241,11 @@ body {
 .text-right {
     text-align: right;
     margin-bottom: 40px;
+
+    @include abstracts.screen(lg) {
+        margin-top: 40px;
+        text-align: initial;
+    }
 }
 
 .navbar {
@@ -247,6 +258,14 @@ body {
     @include abstracts.screen(xl) {
         width: 480px;
         height: 110px;
+    }
+
+    @include abstracts.screen(lg) {
+        width: 100%;
+    }
+
+    @include abstracts.screen(sm) {
+        height: 85px;
     }
 
     &__list {
@@ -280,6 +299,13 @@ body {
             gap: 10px;
         }
 
+        @include abstracts.screen(sm) {
+            width: 60px;
+            height: 60px;
+            font-size: 1.2rem;
+            gap: 5px;
+        }
+
         &--active {
             color: #fff;
             border-radius: 12px;
@@ -304,6 +330,11 @@ body {
 
     &__icon {
         transition: filter 0.25s;
+
+        @include abstracts.screen(sm) {
+            width: 18px;
+            height: 18px;
+        }
     }
 }
 
@@ -353,7 +384,7 @@ body {
         font-size: 4rem;
         font-family: 'Roboto Slab', sans-serif;
         font-weight: 700;
-        line-height: 1.5;
+        line-height: 1.6;
         &:after {
             content: "";
             position: absolute;
@@ -367,6 +398,19 @@ body {
         &--resume:after {
             left: 180px;
         }
+
+        @include abstracts.screen(sm) {
+            font-size: 2.5rem;
+            &::after {
+                width: 170px;
+                left: 130px;
+            }
+
+            &--resume:after {
+                width: 170px;
+                left: 130px;
+            }
+        }
     }
 
     &__sub-heading-3 {
@@ -377,6 +421,7 @@ body {
     &__sub-heading-4 {
         margin-bottom: 10px;
         font-size: 1.9rem;
+        line-height: 1.7;
         font-weight: 500;
 
         @include abstracts.screen(xxl) {
