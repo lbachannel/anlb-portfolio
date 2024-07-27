@@ -1221,7 +1221,7 @@ b, strong {
     --grid-gutter-y: 90px;
   }
 }
-.personal-info-social-link, .personal-info-socials {
+.personal-info__social-link, .personal-info__socials {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1263,7 +1263,7 @@ body {
     padding: 15px 15px;
   }
 }
-.personal-info-img {
+.personal-info__img {
   width: 240px;
   height: 240px;
   border-radius: 20px;
@@ -1271,23 +1271,23 @@ body {
   margin: -180px auto 21px;
 }
 @media (max-width: 1199.98px) {
-  .personal-info-img {
+  .personal-info__img {
     width: 200px;
     height: 200px;
   }
 }
-.personal-info-img__icon {
+.personal-info__img-icon {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.personal-info-name {
+.personal-info__name {
   font-size: 2.6rem;
   font-family: "Roboto Slab", serif;
   font-weight: 500;
   margin-bottom: 20px;
 }
-.personal-info-bio {
+.personal-info__bio {
   display: inline-block;
   font-size: 1.4rem;
   font-weight: 500;
@@ -1296,50 +1296,50 @@ body {
   border-radius: 5px;
   background: #f3f6f6;
 }
-.personal-info-socials {
+.personal-info__socials {
   gap: 12px;
 }
-.personal-info-social-facebook {
+.personal-info__social-facebook {
   filter: brightness(0) saturate(100%) invert(36%) sepia(51%) saturate(3640%) hue-rotate(211deg) brightness(99%) contrast(88%);
 }
-.personal-info-social-instagram {
+.personal-info__social-instagram {
   filter: brightness(0) saturate(100%) invert(44%) sepia(85%) saturate(1935%) hue-rotate(309deg) brightness(86%) contrast(91%);
 }
-.personal-info-social-linkedin {
+.personal-info__social-linkedin {
   filter: brightness(0) saturate(100%) invert(25%) sepia(12%) saturate(4416%) hue-rotate(182deg) brightness(91%) contrast(90%);
 }
-.personal-info-social-facebook, .personal-info-social-instagram, .personal-info-social-linkedin {
+.personal-info__social-facebook, .personal-info__social-instagram, .personal-info__social-linkedin {
   transition: filter 0.25s;
 }
-.personal-info-social-link {
+.personal-info__social-link {
   width: 40px;
   height: 40px;
   background: #f3f6f6;
   border-radius: 8px;
 }
-.personal-info-social-link:hover {
+.personal-info__social-link:hover {
   background: linear-gradient(97deg, #fa5252, #dd2476);
 }
-.personal-info-social-link:hover img {
+.personal-info__social-link:hover img {
   filter: brightness(0) saturate(100%) invert(99%) sepia(37%) saturate(0%) hue-rotate(152deg) brightness(114%) contrast(100%);
 }
-.personal-info-contact {
+.personal-info__contact {
   margin-top: 30px;
   background: #f3f6f6;
   border-radius: 16px;
   padding: 35px 30px;
 }
 @media (max-width: 1199.98px) {
-  .personal-info-contact {
+  .personal-info__contact {
     padding: 15px 15px;
   }
 }
-.personal-info-item {
+.personal-info__item {
   display: flex;
   align-items: center;
   gap: 12px;
 }
-.personal-info-item-left {
+.personal-info__item-left {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1351,56 +1351,56 @@ body {
   flex-shrink: 0;
 }
 @media (max-width: 1199.98px) {
-  .personal-info-item-left {
+  .personal-info__item-left {
     width: 40px;
     height: 40px;
     border-radius: 6px;
   }
 }
-.personal-info-item-left:hover {
+.personal-info__item-left:hover {
   background: linear-gradient(97deg, #fa5252, #dd2476);
 }
-.personal-info-item-left:hover img {
+.personal-info__item-left:hover img {
   filter: brightness(0) saturate(100%) invert(99%) sepia(37%) saturate(0%) hue-rotate(152deg) brightness(114%) contrast(100%);
 }
-.personal-info-item-phone {
+.personal-info__item-phone {
   filter: brightness(0) saturate(100%) invert(27%) sepia(47%) saturate(4508%) hue-rotate(315deg) brightness(93%) contrast(84%);
 }
-.personal-info-item-email {
+.personal-info__item-email {
   filter: brightness(0) saturate(100%) invert(74%) sepia(38%) saturate(316%) hue-rotate(134deg) brightness(86%) contrast(87%);
 }
-.personal-info-item-location {
+.personal-info__item-location {
   filter: brightness(0) saturate(100%) invert(57%) sepia(19%) saturate(1319%) hue-rotate(296deg) brightness(96%) contrast(97%);
 }
-.personal-info-item-calendar {
+.personal-info__item-calendar {
   filter: brightness(0) saturate(100%) invert(57%) sepia(13%) saturate(2365%) hue-rotate(224deg) brightness(101%) contrast(87%);
 }
-.personal-info-item-phone, .personal-info-item-email, .personal-info-item-location, .personal-info-item-calendar {
+.personal-info__item-phone, .personal-info__item-email, .personal-info__item-location, .personal-info__item-calendar {
   transition: filter 0.25s;
 }
-.personal-info-item-right {
+.personal-info__item-right {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
 }
-.personal-info-item__title {
+.personal-info__item-title {
   font-size: 1.4rem;
 }
 @media (max-width: 1199.98px) {
-  .personal-info-item__title {
+  .personal-info__item-title {
     font-size: 1.3rem;
   }
 }
-.personal-info-item__desc {
+.personal-info__item-desc {
   font-size: 1.6rem;
 }
 @media (max-width: 1199.98px) {
-  .personal-info-item__desc {
+  .personal-info__item-desc {
     font-size: 1.5rem;
   }
 }
-.personal-info-item-separate {
+.personal-info__item-separate {
   width: 100%;
   height: 1px;
   background: #e4e4e4;
@@ -1486,6 +1486,87 @@ body {
 }
 .content--active {
   display: block;
+}
+.content-wrap {
+  padding: 60px 60px 0 60px;
+}
+.content-wrap:last-child {
+  padding: 0 60px 0 60px;
+}
+.content__sub-heading-2 {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 35px;
+  font-size: 4rem;
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.content__sub-heading-2:after {
+  content: "";
+  position: absolute;
+  width: 219px;
+  height: 3px;
+  background: linear-gradient(97deg, #fa5252, #dd2476);
+  border-radius: 5px;
+  left: 145px;
+}
+.content__sub-heading-3 {
+  margin-bottom: 30px;
+  font-size: 2.4rem;
+}
+.content__sub-heading-4 {
+  margin-bottom: 10px;
+  font-size: 1.9rem;
+  font-weight: 500;
+}
+.content__desc {
+  margin-bottom: 30px;
+  font-size: 1.6;
+  line-height: 1.6;
+  color: #44566c;
+}
+.content__desc:last-child {
+  margin-bottom: 30px;
+}
+
+.content-what-i-do__item {
+  display: flex;
+  height: 100%;
+  padding: 20px;
+  gap: 20px;
+  background: #eef5fa;
+  border-radius: 12px;
+}
+.content-what-i-do__item--color {
+  background: #fff4f4;
+}
+.content-what-i-do__item-left-wrap-design {
+  filter: brightness(0) saturate(100%) invert(46%) sepia(64%) saturate(612%) hue-rotate(233deg) brightness(101%) contrast(104%);
+}
+.content-what-i-do__item-left-wrap-security {
+  filter: brightness(0) saturate(100%) invert(61%) sepia(20%) saturate(1510%) hue-rotate(70deg) brightness(95%) contrast(92%);
+}
+.content-what-i-do__item-left-wrap-code {
+  filter: brightness(0) saturate(100%) invert(70%) sepia(44%) saturate(5870%) hue-rotate(190deg) brightness(101%) contrast(105%);
+}
+.content-what-i-do__item-left-wrap-database {
+  filter: brightness(0) saturate(100%) invert(59%) sepia(26%) saturate(1517%) hue-rotate(9deg) brightness(99%) contrast(101%);
+}
+.content-what-i-do__item-left-wrap-integrate {
+  filter: brightness(0) saturate(100%) invert(45%) sepia(55%) saturate(1591%) hue-rotate(314deg) brightness(101%) contrast(89%);
+}
+.content-what-i-do__item-left-wrap-learn {
+  filter: brightness(0) saturate(100%) invert(25%) sepia(10%) saturate(6296%) hue-rotate(194deg) brightness(107%) contrast(103%);
+}
+.content-what-i-do__item-right-desc {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #44566c;
+}
+.content-what-i-do__item-right-desc + .content-what-i-do__item-right-desc {
+  margin-top: 10px;
 }
 
 .header {

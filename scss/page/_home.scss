@@ -44,7 +44,7 @@ body {
         padding: 15px 15px;
     }
 
-    &-img {
+    &__img {
         width: 240px;
         height: 240px;
         border-radius: 20px;
@@ -56,21 +56,21 @@ body {
             height: 200px;
         }
 
-        &__icon {
+        &-icon {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
     }
 
-    &-name {
+    &__name {
         font-size: 2.6rem;
         font-family: 'Roboto Slab', serif;
         font-weight: 500;
         margin-bottom: 20px;
     }
 
-    &-bio {
+    &__bio {
         display: inline-block;
         font-size: 1.4rem;
         font-weight: 500;
@@ -81,12 +81,12 @@ body {
         background: #f3f6f6;
     }
 
-    &-socials {
+    &__socials {
         @extend %flexItemsCenter;
         gap: 12px;
     }
 
-    &-social {
+    &__social {
         &-facebook {
             filter: brightness(0) saturate(100%) invert(36%) sepia(51%) saturate(3640%) hue-rotate(211deg) brightness(99%) contrast(88%);
         }
@@ -104,7 +104,7 @@ body {
         }
     }
 
-    &-social-link {
+    &__social-link {
         @extend %flexItemsCenter;
         width: 40px;
         height: 40px;
@@ -120,7 +120,7 @@ body {
         }
     }
 
-    &-contact {
+    &__contact {
         margin-top: 30px;
         background: #f3f6f6;
         border-radius: 16px;
@@ -131,7 +131,7 @@ body {
         }
     }
     
-    &-item {
+    &__item {
         display: flex;
         align-items: center;
         gap: 12px;
@@ -190,7 +190,7 @@ body {
             gap: 10px;
         }
 
-        &__title {
+        &-title {
             font-size: 1.4rem;
 
             @include abstracts.screen(xl) {
@@ -198,7 +198,7 @@ body {
             }
         }
 
-        &__desc {
+        &-desc {
             font-size: 1.6rem;
 
             @include abstracts.screen(xl) {
@@ -301,5 +301,107 @@ body {
 
     &--active {
         display: block;
+    }
+
+    &-wrap {
+        padding: 60px 60px 0 60px;
+
+        &:last-child {
+            padding: 0 60px 0 60px;
+        }
+    }
+
+    &__sub-heading-2 {
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin-bottom: 35px;
+        font-size: 4rem;
+        font-family: 'Roboto Slab', sans-serif;
+        font-weight: 700;
+        line-height: 1.5;
+        &:after {
+            content: "";
+            position: absolute;
+            width: 219px;
+            height: 3px;
+            background: linear-gradient(97deg, #fa5252, #dd2476);;
+            border-radius: 5px;
+            left: 145px;
+        }
+    }
+
+    &__sub-heading-3 {
+        margin-bottom: 30px;
+        font-size: 2.4rem;
+    }
+
+    &__sub-heading-4 {
+        margin-bottom: 10px;
+        font-size: 1.9rem;
+        font-weight: 500;
+    }
+
+    &__desc {
+        margin-bottom: 30px;
+        font-size: 1.6;
+        line-height: 1.6;
+        color: #44566c;
+
+        &:last-child {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.content-what-i-do {
+    &__item {
+        display: flex;
+        height: 100%;
+        padding: 20px;
+        gap: 20px;
+        background: #eef5fa;
+        border-radius: 12px;
+        &--color {
+            background: #fff4f4;
+        }
+
+        &-left {
+            &-wrap-design {
+                filter: brightness(0) saturate(100%) invert(46%) sepia(64%) saturate(612%) hue-rotate(233deg) brightness(101%) contrast(104%);
+            }
+
+            &-wrap-security {
+                filter: brightness(0) saturate(100%) invert(61%) sepia(20%) saturate(1510%) hue-rotate(70deg) brightness(95%) contrast(92%);
+            }
+
+            &-wrap-code {
+                filter: brightness(0) saturate(100%) invert(70%) sepia(44%) saturate(5870%) hue-rotate(190deg) brightness(101%) contrast(105%);
+            }
+
+            &-wrap-database {
+                filter: brightness(0) saturate(100%) invert(59%) sepia(26%) saturate(1517%) hue-rotate(9deg) brightness(99%) contrast(101%);
+            }
+
+            &-wrap-integrate {
+                filter: brightness(0) saturate(100%) invert(45%) sepia(55%) saturate(1591%) hue-rotate(314deg) brightness(101%) contrast(89%);
+            }
+
+            &-wrap-learn {
+                filter: brightness(0) saturate(100%) invert(25%) sepia(10%) saturate(6296%) hue-rotate(194deg) brightness(107%) contrast(103%);
+            }
+        }
+
+        &-right {
+            &-desc {
+                font-size: 1.6rem;
+                line-height: 1.6;
+                color: #44566c;
+            }
+
+            &-desc + &-desc {
+                margin-top: 10px;
+            }
+        }
     }
 }
