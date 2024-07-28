@@ -481,6 +481,10 @@ body {
         }
 
         &-left {
+            &-wrap-sass {
+                filter: brightness(0) saturate(100%) invert(68%) sepia(13%) saturate(4979%) hue-rotate(292deg) brightness(85%) contrast(89%);
+            }
+            
             &-wrap-design {
                 filter: brightness(0) saturate(100%) invert(46%) sepia(64%) saturate(612%) hue-rotate(233deg) brightness(101%) contrast(104%);
             }
@@ -489,6 +493,7 @@ body {
                 filter: brightness(0) saturate(100%) invert(43%) sepia(91%) saturate(275%) hue-rotate(92deg) brightness(93%) contrast(88%);
             }
 
+            &-wrap-html,
             &-wrap-code {
                 filter: brightness(0) saturate(100%) invert(70%) sepia(44%) saturate(5870%) hue-rotate(190deg) brightness(101%) contrast(105%);
             }
@@ -513,7 +518,7 @@ body {
                 filter: brightness(0) saturate(100%) invert(25%) sepia(10%) saturate(6296%) hue-rotate(194deg) brightness(107%) contrast(103%);
             }
 
-            &-wrap-design, &-wrap-security, &-wrap-code, &-wrap-database, &-wrap-pen, &-wrap-chart, &-wrap-integrate, &-wrap-learn {
+            &-wrap-html, &-wrap-sass, &-wrap-design, &-wrap-security, &-wrap-code, &-wrap-database, &-wrap-pen, &-wrap-chart, &-wrap-integrate, &-wrap-learn {
                 @include abstracts.screen(xxl) {
                     width: 35px;
                     height: 35px;
