@@ -41,3 +41,15 @@ window.addEventListener("template-loaded", () => {
         });
     });
 });
+
+window.addEventListener("template-loaded", () => {
+    const links = $$(".js-dropdown-list > li > a");
+
+    links.forEach((link) => {
+        link.onclick = () => {
+            const item = link.closest("li");
+            item.classList.toggle("portfolio__item--active");
+        };
+    });
+});
+
