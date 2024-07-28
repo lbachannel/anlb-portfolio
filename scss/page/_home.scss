@@ -509,7 +509,7 @@ body {
                 filter: brightness(0) saturate(100%) invert(25%) sepia(10%) saturate(6296%) hue-rotate(194deg) brightness(107%) contrast(103%);
             }
 
-            &-wrap-design, &-wrap-security, &-wrap-code, &-wrap-database, &-wrap-integrate, &-wrap-learn {
+            &-wrap-design, &-wrap-security, &-wrap-code, &-wrap-database, &-wrap-pen, &-wrap-chart, &-wrap-integrate, &-wrap-learn {
                 @include abstracts.screen(xxl) {
                     width: 35px;
                     height: 35px;

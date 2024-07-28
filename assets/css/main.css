@@ -1691,13 +1691,13 @@ body {
   filter: brightness(0) saturate(100%) invert(25%) sepia(10%) saturate(6296%) hue-rotate(194deg) brightness(107%) contrast(103%);
 }
 @media (max-width: 1399.98px) {
-  .content-what-i-do__item-left-wrap-design, .content-what-i-do__item-left-wrap-security, .content-what-i-do__item-left-wrap-code, .content-what-i-do__item-left-wrap-database, .content-what-i-do__item-left-wrap-integrate, .content-what-i-do__item-left-wrap-learn {
+  .content-what-i-do__item-left-wrap-design, .content-what-i-do__item-left-wrap-security, .content-what-i-do__item-left-wrap-code, .content-what-i-do__item-left-wrap-database, .content-what-i-do__item-left-wrap-pen, .content-what-i-do__item-left-wrap-chart, .content-what-i-do__item-left-wrap-integrate, .content-what-i-do__item-left-wrap-learn {
     width: 35px;
     height: 35px;
   }
 }
 @media (max-width: 1199.98px) {
-  .content-what-i-do__item-left-wrap-design, .content-what-i-do__item-left-wrap-security, .content-what-i-do__item-left-wrap-code, .content-what-i-do__item-left-wrap-database, .content-what-i-do__item-left-wrap-integrate, .content-what-i-do__item-left-wrap-learn {
+  .content-what-i-do__item-left-wrap-design, .content-what-i-do__item-left-wrap-security, .content-what-i-do__item-left-wrap-code, .content-what-i-do__item-left-wrap-database, .content-what-i-do__item-left-wrap-pen, .content-what-i-do__item-left-wrap-chart, .content-what-i-do__item-left-wrap-integrate, .content-what-i-do__item-left-wrap-learn {
     width: 25px;
     height: 25px;
   }
