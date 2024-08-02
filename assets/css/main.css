@@ -1878,7 +1878,7 @@ body {
 }
 
 .logo__text {
-  padding-left: 10px;
+  padding: 10px;
   font-size: 4.3rem;
   font-weight: 700;
   font-family: "Marck Script", sans-serif;
