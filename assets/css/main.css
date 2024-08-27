@@ -1862,6 +1862,67 @@ body::after {
   background: #e5eef7;
 }
 
+.cv-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cv-info__sub-heading-2 {
+  font-size: 3.5rem;
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 700;
+  line-height: 1.6;
+  color: #004aac;
+  margin-bottom: 10px;
+}
+
+.cv-title {
+  font-size: 2.5rem;
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 700;
+  line-height: 1.6;
+  color: #004aac;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.cv-education__desc,
+.cv-work-experience__desc,
+.cv-info__desc {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.cv-education__desc__list,
+.cv-work-experience__list,
+.cv-technical__list {
+  list-style: disc inside;
+  text-indent: 25px;
+}
+
+.cv-work-experience__sub-list,
+.cv-technical__sub-list {
+  list-style: circle inside;
+  text-indent: 50px;
+}
+
+.cv-technical__item,
+.cv-work-experience__item {
+  text-indent: -23px;
+  padding-left: 50px;
+  line-height: 1.5;
+}
+
+.cv-education-name,
+.cv-company-name {
+  display: flex;
+  justify-content: space-between;
+}
+
 .header {
   margin-bottom: 240px;
 }
@@ -1894,6 +1955,13 @@ body::after {
   color: transparent;
   background-clip: text;
   background-image: linear-gradient(180deg, var(--gradient-to), var(--gradient-from));
+}
+
+.separate {
+  width: 100%;
+  height: 1.5px;
+  background: #004aac;
+  margin: 20px 0;
 }
 
 /*# sourceMappingURL=main.css.map */
