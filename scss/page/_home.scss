@@ -721,6 +721,27 @@ body {
             }
         }
     }
+
+    &__desc {
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 1.5;
+        color: #dd2476;
+        text-align: center;
+    }
+
+    &__detail {
+        &-list {
+            list-style: disc inside;
+            text-indent: 25px;
+        }
+
+        &-item {
+            text-indent: -23px;
+            padding-left: 50px;
+            line-height: 1.5;
+        }
+    }
 }
 
 // mycv
@@ -750,6 +771,14 @@ body {
 
 .mt-10 {
     margin-top: 10px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
 }
 
 .cv-education__desc,
