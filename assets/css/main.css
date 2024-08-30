@@ -1934,6 +1934,7 @@ body::after {
   text-indent: 50px;
 }
 
+.cv-education__item,
 .cv-technical__item,
 .cv-work-experience__item {
   text-indent: -23px;
