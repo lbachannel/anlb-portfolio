@@ -1955,13 +1955,26 @@ body::after {
   padding: 20px;
   border-radius: 12px;
 }
-.header-logo {
-  flex: 0 0 auto;
+.header .logo {
+  width: 25px;
+  filter: brightness(0) saturate(100%) invert(39%) sepia(19%) saturate(6805%) hue-rotate(331deg) brightness(96%) contrast(91%);
 }
-.header-right {
+.header .logo__link {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.header .logo__heading {
+  filter: none;
+  font-size: 3rem;
+  font-weight: 700;
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(90deg, var(--gradient-to), var(--gradient-from));
+}
+.header .logo .header__logo-img {
+  width: 100%;
 }
 
 .footer__row {
@@ -1970,16 +1983,6 @@ body::after {
   border-bottom-right-radius: 20px;
   text-align: center;
   background: #f8fbfb;
-}
-
-.logo__text {
-  padding: 10px;
-  font-size: 4.3rem;
-  font-weight: 700;
-  font-family: "Marck Script", sans-serif;
-  color: transparent;
-  background-clip: text;
-  background-image: linear-gradient(180deg, var(--gradient-to), var(--gradient-from));
 }
 
 .separate {

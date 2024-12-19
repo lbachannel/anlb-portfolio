@@ -6,14 +6,29 @@
         border-radius: 12px;
     }
 
-    &-logo {
-        flex: 0 0 auto;
+    & .logo {
+        width: 25px;
+        filter: brightness(0) saturate(100%) invert(39%) sepia(19%) saturate(6805%) hue-rotate(331deg) brightness(96%) contrast(91%);
     }
 
-    &-right {
+    & .logo__link {
         display: flex;
         align-items: center;
-        justify-content: flex-end;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    & .logo__heading {
+        filter: none;
+        font-size: 3rem;
+        font-weight: 700;
+    
+        color: transparent;
+        background-clip: text;
+        background-image: linear-gradient(90deg, var(--gradient-to), var(--gradient-from));
+    }
+
+    & .logo .header__logo-img {
+        width: 100%;
     }
 }
-
