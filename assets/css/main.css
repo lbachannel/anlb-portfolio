@@ -1787,6 +1787,11 @@ body::after {
   }
 }
 
+.work__desc {
+  font-size: 1.6;
+  line-height: 1.5;
+}
+
 .portfolio__list {
   display: flex;
   flex-direction: column;
